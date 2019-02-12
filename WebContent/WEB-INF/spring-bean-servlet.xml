@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans 
+  xmlns:b="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:u="http://www.springframework.org/schema/util"
+  xmlns:c="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+           http://www.springframework.org/schema/util 
+           http://www.springframework.org/schema/util/spring-util-3.2.xsd
+           http://www.springframework.org/schema/context 
+           http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+           
+  <c:component-scan base-package="com.spring.security.controller"></c:component-scan>
+  
+  <b:bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<b:property name="prefix">
+			<b:value>/WEB-INF/jsp/</b:value>
+		</b:property>
+		<b:property name="suffix">
+			<b:value>.jsp</b:value>
+		</b:property>
+	</b:bean>
+
+  
+</b:beans>
